@@ -6,6 +6,19 @@ package Ch5;
 public class GameLauncher {
     public static void main (String[] args) {
         GuessingGame gg = new GuessingGame();
-        gg.startGame();
+        GameHelper helper = new GameHelper();
+        int randomNum = (int) (Math.random() * 100);
+
+        gg.setRandomNum(randomNum);
+        boolean isAlive = true;
+
+        while(isAlive) {
+            String guess = helper.getUserInput("Enter your guess");
+            String result = gg.checkYourself(guess);
+            if(result.equals("win")) {
+                isAlive = false;
+                System.out.println("You win!");
+            }
+        }
     }
 }

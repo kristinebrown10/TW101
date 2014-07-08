@@ -11,33 +11,26 @@ package Ch5;
  */
 public class GuessingGame {
 
-    public GuessingGame() {}
-    public void startGame () {
-        int num = (int) (Math.random() * 99) + 1;
-        int max = 99;
-        int min = 1;
-        System.out.println("Number to guess: " + num);
-        int guess;
+    int random;
 
-        User user = new User();
+    public void setRandomNum(int r) {
+        random = r;
+    }
 
-        while(true) {
-            guess = user.guess(min,max);
-            System.out.println("User guessed: " + guess);
-
-            if(guess == num) {
-                System.out.println("You win! The number was " + num);
-                break;
-            }
-            else if(guess > num) {
-                max = guess - 1;
-                System.out.println("You guessed too high, try again.");
-            }
-            else if(guess < num) {
-                min = guess + 1;
-                System.out.println("You guessed too low, try again.");
-
-            }
+    public String checkYourself(String userGuess) {
+        int guess = Integer.parseInt(userGuess);
+        String result = "high";
+        if(guess == random) {
+            result = "win";
         }
+        else if(guess > random) {
+            System.out.println("You guessed too high, try again.");
+            result = "high";
+        }
+        else if(guess < random) {
+            System.out.println("You guessed too low, try again.");
+            result = "low";
+        }
+        return result;
     }
 }
