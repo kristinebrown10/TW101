@@ -10,16 +10,7 @@ package Ch2;
 public class CounterClass
 {
     // instance variables - replace the example below with your own
-    private int count;
-
-    /**
-     * Constructor for objects of class CounterClass
-     */
-    public CounterClass()
-    {
-        // initialise instance variables
-        count = 0;
-    }
+    private int count = 0;
 
     public void increment()
     {

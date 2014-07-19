@@ -4,6 +4,7 @@ import java.io.*;
 
 /**
  * Created by KBrown on 7/7/14.
+ * Ready back code to get user input
  */
 public class GameHelper {
     public String getUserInput(String prompt) {

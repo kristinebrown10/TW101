@@ -2,6 +2,7 @@ package Ch6;
 
 /**
  * Created by KBrown on 7/3/14.
+ * Guessing game create random integer, checks user guess against random int, and gives feedback on user's guesses.
  */
 public class GuessingGame {
     int random;

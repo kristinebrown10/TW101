@@ -2,6 +2,7 @@ package Ch5;
 
 /**
  * Created by KBrown on 7/3/14.
+ * Main class holds a GuessingGame object and GameHelper object to run game.
  */
 public class GameLauncher {
     public static void main (String[] args) {

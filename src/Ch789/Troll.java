@@ -2,7 +2,7 @@ package Ch789;
 
 /**
  * Created by KBrown on 7/15/14.
- *
+ * Troll class implements Monster interface
  */
 public class Troll implements Monster{
     public String name = "Troll";

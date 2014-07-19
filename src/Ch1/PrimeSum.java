@@ -2,6 +2,7 @@ package Ch1;
 
 /**
  * Created by KBrown on 7/3/14.
+ * Create a class that prints the sum of all odd numbers from 1 to 100
  */
 public class PrimeSum {
     public static void main (String[] args) {

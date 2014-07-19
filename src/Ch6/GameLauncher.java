@@ -2,6 +2,7 @@ package Ch6;
 import java.util.ArrayList;
 /**
  * Created by KBrown on 7/3/14.
+ * Runs the game and saves all user answers and prints them out at the end of the game.
  */
 public class GameLauncher {
     private GuessingGame gg = new GuessingGame();

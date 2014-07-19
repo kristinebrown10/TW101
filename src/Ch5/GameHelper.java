@@ -2,6 +2,7 @@ package Ch5;
 import java.io.*;
 /**
  * Created by KBrown on 7/7/14.  Taken from HeadFirst, Ch 5, Page 112.
+ * Gets user input. Ready-bake code.
  */
 public class GameHelper {
 
